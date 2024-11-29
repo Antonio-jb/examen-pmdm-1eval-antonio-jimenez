@@ -81,25 +81,27 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public class Alerta {
-
-        MaterialAlertDialogBuilder dialogBuilder = new MaterialAlertDialogBuilder(MainActivity.this)
-                .setIcon(R.drawable.logo)
-                .setTitle("Antonio Jimenez")
-                .setMessage("Hola, muy buenas profe.")
-                .setPositiveButton("Aprobar", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(MainActivity.this, "Aprobado.", Toast.LENGTH_SHORT).show();
-                        dialogInterface.cancel();
-                    }
-                })
-                .setNegativeButton("Reprobar", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Toast.makeText(MainActivity.this, "Reprobado.", Toast.LENGTH_SHORT).show();
-                        dialogInterface.cancel();
-                    }
-                });
-    }
+  //  public class Alerta {
+//
+  //      public void alertDialog() {
+  //          MaterialAlertDialogBuilder dialogBuilder = new MaterialAlertDialogBuilder(MainActivity.this)
+  //                  .setIcon(R.drawable.logo)
+  //                  .setTitle("Antonio Jimenez")
+  //                  .setMessage("Hola, muy buenas profe.")
+  //                  .setPositiveButton("Aprobar", new DialogInterface.OnClickListener() {
+  //                      @Override
+  //                      public void onClick(DialogInterface dialogInterface, int i) {
+  //                          Toast.makeText(MainActivity.this, "Aprobado.", Toast.LENGTH_SHORT).show();
+  //                          dialogInterface.cancel();
+  //                      }
+  //                  })
+  //                  .setNegativeButton("Reprobar", new DialogInterface.OnClickListener() {
+  //                      @Override
+  //                      public void onClick(DialogInterface dialogInterface, int i) {
+  //                          Toast.makeText(MainActivity.this, "Reprobado.", Toast.LENGTH_SHORT).show();
+  //                          dialogInterface.cancel();
+  //                      }
+  //                  });
+  //      }
+  //  }
 }
