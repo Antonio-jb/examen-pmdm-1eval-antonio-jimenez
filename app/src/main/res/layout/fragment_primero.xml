@@ -10,13 +10,23 @@
         android:id="@+id/primerTexto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Primer fragment."
-        android:textSize="30sp"
+        android:text="¡Nombre aleatorio!"
+        android:textAlignment="center"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:textColor="@color/white">
     </TextView>
+
+    <Button
+        android:id="@+id/buttonRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Generar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/primerTexto" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
